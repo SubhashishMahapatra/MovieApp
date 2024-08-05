@@ -29,7 +29,7 @@ namespace MovieApp
                 Console.WriteLine();
                 Console.WriteLine("Choose Any One Option Below");
                 Console.WriteLine();
-                Console.Write("1. Add Movie  2. Display Movie  3. Delete Movie :");
+                Console.Write("1. Add Movie  2. Display Movie  3. Delete Movie 4. Exit:");
                 int choice = int.Parse(Console.ReadLine());
 
                 MovieManager.MainMenu(choice);
