@@ -14,6 +14,8 @@ namespace MovieAppClasses.Models
 
         public static List<Movie> movies = new List<Movie>();
 
+
+
         //Movie movie1 = new Movie();
 
         public MovieManager()
@@ -37,12 +39,22 @@ namespace MovieAppClasses.Models
                     MovieManager.DeleteMovie(MovieManager.movies);
                     break;
                 case 4:
+                    ClearAll(movies);
+                    break;
+                case 5:
                     break;
 
             }
 
         }
 
+        public static void ClearAll(List<Movie> movie)
+        {
+            movies.Clear();
+            SerializationDeserialization.Serialization(movie);
+            Console.WriteLine("Cleared All Movie!");
+        }
+        
 
         public static void AddMovie(List<Movie> movie)
         {
