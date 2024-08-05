@@ -36,6 +36,8 @@ namespace MovieAppClasses.Models
                 case 3:
                     MovieManager.DeleteMovie(MovieManager.movies);
                     break;
+                case 4:
+                    break;
 
             }
 
@@ -48,7 +50,7 @@ namespace MovieAppClasses.Models
 
             try
             {
-                if (movie.Count < 2)
+                if (movie.Count < 5)
                 {
 
                     Console.WriteLine();
